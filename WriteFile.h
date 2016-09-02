@@ -6,7 +6,7 @@
 #include <fstream>
 using namespace std;
 
-class WriteFile
+class WriteFile 
 {
    private: //User, don't touch this.
 
@@ -15,11 +15,14 @@ class WriteFile
 
 	public: //User, you might be smart enough to deal with this...if you consult me first.
 			
-			WriteFile(const char* file_name);
+			WriteFile(const char* file_name); //Constructor
+			~WriteFile(); //Deconstructor
 			
-			void writeLine();
+			void writeLine(String* line);  //is this all that should go there?
 			
 			void close();
+			
+			
 
 };
 #endif
