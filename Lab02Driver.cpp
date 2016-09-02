@@ -11,7 +11,7 @@ int main()
 
    while(!rf->eof())
    {
-      String* line = rf->readLine();
+      String* line = rf->readLine();//Can you see me? If so, Upsilon epsilon sigma!
       wf->writeLine(line);
       delete line;
    }
