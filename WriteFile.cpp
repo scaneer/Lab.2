@@ -5,9 +5,7 @@ WriteFile::WriteFile(const char* file_name) //making sure the file opens correct
 {
    output_file.open(file_name);
    closed = false;
-   
 }
-
 
 void WriteFile::close() //close the file we've been writing to
 {
@@ -18,7 +16,7 @@ void WriteFile::close() //close the file we've been writing to
    }
 }
 
-void WriteFile::writeLine() // function used in writing to the file
+void WriteFile::writeLine(String* line) // function used in writing to the file
 {
    if (!closed && line->length() > 0)//not sure about this...this was always my weak spot last semester.
    {
